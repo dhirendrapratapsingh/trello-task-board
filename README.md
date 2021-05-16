@@ -69,3 +69,14 @@ Note - `On refreshing the page, the existing lists and cards on the page should 
 
 ### Screeshots
 
+![image](https://user-images.githubusercontent.com/32532380/118384432-9089e980-b623-11eb-99fe-6373294e23ff.png)
+
+![image](https://user-images.githubusercontent.com/32532380/118384472-d3e45800-b623-11eb-9d8e-b00445a3fcad.png)
+
+![image](https://user-images.githubusercontent.com/32532380/118384488-fbd3bb80-b623-11eb-98cb-2334e1ff2612.png)
+
+![image](https://user-images.githubusercontent.com/32532380/118384527-4a815580-b624-11eb-8580-14181db26325.png)
+
+
+
+
