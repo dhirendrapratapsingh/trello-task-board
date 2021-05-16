@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+### `Dependencies/Libraries used `
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[React JS(UI)](https://reactjs.org/docs/getting-started.html),
+[Bootstrap3.7](https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js), <br>
+[jQuery3.3](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js),
+[Fontawsome](https://fontawesome.com/v4.7.0/icons/), 
+[MaterializeCSS](https://materializecss.com/getting-started.html),
+[npm](https://www.npmjs.com/)
 
-## Available Scripts
+The following cdns are included in index.html via scipt/links
+[Bootstrap3.7](https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js),
+[jQuery3.3](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js),
+[Fontawsome](https://fontawesome.com/v4.7.0/icons/), 
+[MaterializeCSS](https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css)<br>
 
-In the project directory, you can run:
 
-### `npm start`
+### `Steps to create Project & add all dependencies in Windows OS`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`Install nodejs npm ` <br>
+From the step by step Guide described here [Installation of Node JS on Window](https://www.geeksforgeeks.org/installation-of-node-js-on-windows/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+npm install create-react-app -g [react-app/YourAppName]<br>
+create-react-app trello-task-board<br>
+cd trello-task-board<br>
+npm start<br>
 
-### `npm test`
+Then open http://localhost:3000/ to see your app.<br>
+stop ctrl+c to add dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Copy update package.json with package.json of this project
+and run "npm install"
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+replace src folder with my src folder to get code & resources<br>
 
-The build is minified and the filenames include the hashes.\
+npm start<br>
+open http://localhost:3000/ to run app again.
+
+The build is minified by Webpack and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Problem Statemnet and basic Features
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+We want to implement a trello board which will help us keep track of cards categorised into lists.
+For example - in the above figure, we have two list Teams and Products. Each list can have any
+number of cards. For example, in the above figure Teams list has two cards.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Mandatory attributes of each card - title, desc and a cross(X) button to delete it.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`A new list can be added to the board by pressing the ADD LIST button present on the right side of the board. Each list should have a Title, a cross(X) button to delete it and can have 0 or more cards. Deleting a list should delete all the cards present in that list.`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`A new card can be added to a list via a plus(+) button present at the bottom of each list(inside a list).`
 
-## Learn More
+`A card can be dragged from one list and dropped on the second list to make it part of the second list. If it is dropped outside the second list, it comes back to the list from which it was picked up.`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Note - `Whenever a card is dropped on any list, it should become the first card of that list. There is no upper limit on the number of lists and cards which can be added to the board.`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Note - `On refreshing the page, the existing lists and cards on the page should remain intact`
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Extra features implemented
 
-### Analyzing the Bundle Size
+- Modals to accept infprmation from users like Task Name, Description etc.
+- used React 17 having impeccable performance
+- Implemented Code re-use techniques
+- Added Fallback UI to handle negative cases
+- Added error handling and validation check practices
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Screeshots
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
