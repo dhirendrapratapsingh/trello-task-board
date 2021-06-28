@@ -1,11 +1,10 @@
 /* Layout */
 
-html,body{
-  height: 100vh;
+html,body, #root, .App{
+  height: 100%;
 }
 .App {
   text-align: center;
-  height: 100vh;
   background: #ADA996;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -17,9 +16,11 @@ html,body{
   display: flex;
   flex-direction: row;
   margin-right: 50px;
+  overflow-y: overlay;
 }
 .List{
   flex: 1;
+  min-width: 200px;
 }
 
 .primaryActionButton{
@@ -33,6 +34,9 @@ html,body{
   .primaryActionButton{
     top: unset;
     bottom: 3%;
+  }
+  #listContainer{
+    margin-right: 0px;
   }
 }
 
@@ -103,38 +107,6 @@ h4 {
 }
 
 
-/* Modal */
-
-.modal-header, .close {
-  background-color: #5cb85c;
-  color:white !important;
-  text-align: center;
-  font-size: 30px;
-}
-
-.modal-footer, .row{
-  margin-right: 0px;
-  margin-left: 0px;
-}
-.modal{
-  border-radius: 25px;
-  border: 5px solid white;
-}
-.modal .modal-content {
-  padding: 0px;
-}
 
 
-.App-header {
-  background: #16222A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  min-height: 5vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}

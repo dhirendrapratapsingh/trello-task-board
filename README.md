@@ -36,11 +36,8 @@ replace src folder with my src folder to get code & resources<br>
 npm start<br>
 open http://localhost:3000/ to run app again.
 
-The build is minified by Webpack and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-
-### Problem Statemnet and basic Features
+## Problem Statemnet and main Features
 
 We want to implement a trello board which will help us keep track of cards categorised into lists.
 For example - in the above figure, we have two list Teams and Products. Each list can have any
@@ -54,18 +51,35 @@ Mandatory attributes of each card - title, desc and a cross(X) button to delete 
 
 `A card can be dragged from one list and dropped on the second list to make it part of the second list. If it is dropped outside the second list, it comes back to the list from which it was picked up.`
 
-Note - `Whenever a card is dropped on any list, it should become the first card of that list. There is no upper limit on the number of lists and cards which can be added to the board.`
+Note1 - `Whenever a card is dropped on any list, it should become the first card of that list. There is no upper limit on the number of lists and cards which can be added to the board.`
 
-Note - `On refreshing the page, the existing lists and cards on the page should remain intact`
+Note2 - `On refreshing the page, the existing lists and cards on the page should remain intact`
 
 
-### Extra features implemented
+## Extra features implemented or points taken care of
 
 - Modals to accept infprmation from users like Task Name, Description etc.
 - used React 17 having impeccable performance
 - Implemented Code re-use techniques
-- Added Fallback UI to handle negative cases
+- Added Fallback UI to handle negative cases for No Category list & No task items
 - Added error handling and validation check practices
+- Modular code structure
 
-### Screeshots
+## Screeshots
+
+![image](https://user-images.githubusercontent.com/32532380/118384432-9089e980-b623-11eb-99fe-6373294e23ff.png)
+
+Modals to add Catergory list or task items
+![image](https://user-images.githubusercontent.com/32532380/123685392-458f0300-d86c-11eb-9fe4-09334c36cf1a.png)
+
+![image](https://user-images.githubusercontent.com/32532380/118384488-fbd3bb80-b623-11eb-98cb-2334e1ff2612.png)
+
+![image](https://user-images.githubusercontent.com/32532380/123682389-93a20780-d868-11eb-9f75-568ae60d600e.png)
+
+Responsive on all mobile & ipad viewports
+![pjimage](https://user-images.githubusercontent.com/32532380/123683720-3018d980-d86a-11eb-978e-1c1e21ec89b6.jpg)
+
+
+
+
 

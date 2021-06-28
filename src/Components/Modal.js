@@ -7,7 +7,6 @@ class Modal extends Component
 {
     constructor(props) {
         super(props);
-        //this.el = document.createElement('div');
         this.closeButtonRef = React.createRef();
         
     }
@@ -32,14 +31,16 @@ class Modal extends Component
                                     <h4 className="modal-title" id="modalLabel"> <span className="fa fa-tasks"></span> {title}</h4>
                                 </div>
 
-                                <div className="modal-body" style={{'display' : this.props.children ? 'block' : 'none' }}>{this.props.children}</div>
+                                <div className="modal-body" >
+                                    {this.props.children}
+                                </div>
 
                                 <div className="modal-footer row" >
                                     <div className="col-md-6 ">
                                         <button type="button" className="btn btn-secondary right" data-dismiss="modal">Close</button>
                                     </div>
                                     <div className="col-md-6" onClick={action}>
-                                        <button type="button" className="btn btn-primary left" >{actionName}</button>
+                                        <button type="button"  className={this.props.formIsValid ? 'btn btn-primary left' : 'btn btn-primary left disabled' } >{actionName}</button>
                                     </div>
 
                                 </div>
