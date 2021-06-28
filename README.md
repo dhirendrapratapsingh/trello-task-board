@@ -56,6 +56,9 @@ Note1 - `Whenever a card is dropped on any list, it should become the first card
 Note2 - `On refreshing the page, the existing lists and cards on the page should remain intact`
 
 
+![image](https://user-images.githubusercontent.com/32532380/123689295-b1736a80-d870-11eb-8ea0-c4d79db1b943.png)
+
+
 ## Extra features implemented or points taken care of
 
 - Modals to accept infprmation from users like Task Name, Description etc.
